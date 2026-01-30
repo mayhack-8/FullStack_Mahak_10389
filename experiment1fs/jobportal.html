@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job Portal</title>
+
+<style>
+/* ===== MAIN CONTAINER ===== */
+.container{
+    width:95%;
+    margin:auto;
+    border:2px solid black;
+    background-color:#e8f4ff; /* light blue background */
+}
+
+/* ===== TOP BLUE STRIP ===== */
+.top-strip{
+    background-color:#0b2c5d; /* dark blue */
+    color:white;
+    text-align:center;
+    padding:8px;
+    font-weight:bold;
+}
+.top-strip a{
+    color:white;
+    text-decoration:underline;
+    margin-left:15px;
+    cursor:pointer;
+}
+.top-strip a:hover{
+    color:#ddd;
+}
+
+/* ===== HEADER LOGO AREA ===== */
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+}
+
+/* MB Hires LOGO STYLE */
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    font-style: italic;
+    
+    text-decoration: underline;
+    cursor:pointer;
+    color:black; /* black logo */
+    letter-spacing:1px; /* slight spacing for premium look */
+}
+.logo:hover{
+    color:#444; /* slight dark grey on hover */
+}
+.logo:hover{
+    color:#0b2c5d;
+}
+
+/* ===== NAVBAR ===== */
+.nav{
+    display:flex;
+    align-items:center;
+    background-color:lightyellow;
+    padding:10px;
+}
+
+/* LEFT NAV */
+.nav-left{
+    display:flex;
+    gap:20px;
+}
+
+/* CENTER SEARCH SPACE */
+.nav-center{
+    margin:auto;
+    border:1px solid #555;
+    padding:5px 12px;
+    background-color:#f6f0f0; /* grey search box */
+}
+.nav-center:hover{
+    background-color:#bfbfbf;
+}
+.nav-center:hover{
+    background-color:rgb(203, 236, 247);
+}
+
+/* RIGHT NAV */
+.nav-right{
+    display:flex;
+    gap:10px;
+}
+
+.nav a{
+    text-decoration:none;
+    color:rgb(194, 21, 21);
+    font-weight:bold;
+}
+
+/* INVERTED TRIANGLE */
+.triangle{
+    font-size:10px;
+}
+
+/* LOGIN SIGNUP BOXES */
+.box-btn{
+    border:1px solid #5a5b63;
+    padding:5px 12px;
+    background-color: azure; /* grey boxes */
+    cursor:pointer;
+}
+.box-btn:hover{
+    background-color:#bfbfbf;
+    color:black;
+}
+.box-btn:hover{
+    background-color:rgb(134, 210, 52);
+    color:white;
+}
+
+/* ===== MAIN SECTION ===== */
+.main{
+    padding:20px;
+}
+
+/* POPULAR CATEGORIES */
+.categories{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+
+.cat{
+    border:1px solid #989dc0;
+    padding:12px 18px;
+    margin:10px;
+    background-color: rgb(191, 187, 187); /* grey */
+    cursor:pointer;
+}
+.cat:hover{
+    background-color:#bfbfbf;
+}
+.cat:hover{
+    background-color:rgb(204, 98, 98);
+    color:white;
+}
+
+/* OVAL TAGS */
+.oval-section{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:15px;
+}
+
+.oval{
+    border:1px solid #555;
+    border-radius:50px; /* oval shape */
+    padding:8px 18px;
+    background-color:#d9d9d9; /* grey */
+    cursor:pointer;
+}
+.oval:hover{
+    background-color:#bfbfbf;
+}
+.oval:hover{
+    background-color:rgb(97, 172, 94);
+    color:white;
+}
+
+/* HIRING COMPANY BOXES */
+.company-row{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    margin-top:20px;
+}
+
+.company-box{
+    border:1px solid #555;
+    width:240px;
+    padding:12px;
+    margin:10px;
+    background-color:#d9d9d9; /* grey */
+    cursor:pointer;
+}
+.company-box:hover{
+    background-color:#bfbfbf;
+}
+.company-box:hover{
+    background-color:rgb(203, 236, 247);
+}
+
+/* ===== FOOTER ===== */
+.footer{
+    background-color:#0b2c5d; /* dark blue */
+    color:white;
+    padding:20px;
+    margin-top:20px;
+}
+
+.footer a{
+    color:white;
+    text-decoration:none;
+    margin-right:10px;
+}
+
+.copyright{
+    text-align:center;
+    margin-top:15px;
+    font-size:14px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<!-- ===== TOP BLUE LINE ===== -->
+<div class="top-strip">
+    Your pathway to professional success!
+    <a>KNOW MORE</a>
+</div>
+
+<!-- ===== HEADER ===== -->
+<div class="header">
+    <div style="display:flex;
+    align-items:center;
+    gap:10px;">
+        <!-- Simple Logo Image -->
+        <img src="https://fastly.picsum.photos/id/1/5000/3333.jpg?hmac=Asv2DU3rA_5D1xSe22xZK47WEAN0wjWeFOhzd13ujW4" width="40" height="40">
+        <div class="logo">MB-Hires</div>
+    </div>
+</div>
+</div>
+
+<!-- ===== NAVBAR ===== -->
+<div class="nav">
+
+    <!-- LEFT MENU -->
+    <div class="nav-left">
+        <select>
+            <option>Jobs</option>
+            <option>IT Jobs</option>
+            <option>Marketing Jobs</option>
+            <option>Finance Jobs</option>
+        </select>
+
+        <select>
+            <option>Internships</option>
+            <option>Summer Internship</option>
+            <option>Remote Internship</option>
+            <option>Paid Internship</option>
+        </select>
+
+        <select>
+            <option>Courses</option>
+            <option>Web Dev</option>
+            <option>Data Science</option>
+            <option>AI/ML</option>
+        </select>
+    </div>
+
+    <!-- CENTER SPACE FOR SEARCH -->
+    <div class="nav-center">
+    <input type="text" placeholder="Search jobs" style="border:none;outline:none;background-color:transparent;">
+</div>
+
+    <!-- RIGHT MENU -->
+    <div class="nav-right">
+        <div class="box-btn">Login</div>
+        <div class="box-btn">Signup/Register</div>
+    </div>
+</div>
+
+<hr>
+
+<!-- ===== MAIN SECTION ===== -->
+<div class="main">
+
+<h2>Popular Categories</h2>
+<div class="categories">
+    <div class="cat">Web Development</div>
+    <div class="cat">Data Science</div>
+    <div class="cat">Marketing</div>
+    <div class="cat">Design</div>
+    <div class="cat">Finance</div>
+</div>
+
+<h2>Fresher Jobs & Internships</h2>
+
+<!-- OVAL TAGS -->
+<div class="oval-section">
+    <div class="oval">Big Brands</div>
+    <div class="oval">Work From Home</div>
+    <div class="oval">Data Science</div>
+    <div class="oval">Media Design</div>
+    <div class="oval">IT Sector</div>
+</div>
+
+<h2>Hiring Now</h2>
+<!-- HIRING COMPANIES ROW -->
+<div class="company-row">
+
+    <div class="company-box">
+        <h3>TechSpark Pvt Ltd</h3>
+        <p>Email: hr@techspark.com</p>
+        <p>Pay: ₹25,000 / month</p>
+        <p>Role: Frontend Developer</p>
+    </div>
+
+    <div class="company-box">
+        <h3>DataCorp</h3>
+        <p>Email: jobs@datacorp.com</p>
+        <p>Pay: ₹18,000 / month</p>
+        <p>Role: Data Analyst Intern</p>
+    </div>
+
+    <div class="company-box">
+        <h3>Brandify Media</h3>
+        <p>Email: career@brandify.com</p>
+        <p>Pay: ₹30,000 / month</p>
+        <p>Role: Digital Marketing</p>
+    </div>
+
+</div>
+
+</div>
+
+<!-- ===== FOOTER ===== -->
+<div class="footer">
+    <div style="margin-bottom:10px;">
+        <a>Home</a> |
+        <a>Jobs</a> |
+        <a>Internships</a> |
+        <a>Contact</a>
+    </div>
+    <h3>About Us</h3>
+    <p>MB Hires is a student-focused job and internship portal helping freshers build careers.</p>
+
+    <p>
+        <a href="#">#Careers</a>
+        <a href="#">#Jobs</a>
+        <a href="#">#Internships</a>
+        <a href="#">#Freshers</a>
+        <a href="#">#Upskill</a>
+    </p>
+
+    <div class="copyright">
+        © 2026 MB Hires Job Portal | All Rights Reserved
+    </div>
+</div>
+
+</div>
+<script>
+    alert("Welcome to MB Hires Job Portal!");
+</script>
+
+</body>
+</html>
