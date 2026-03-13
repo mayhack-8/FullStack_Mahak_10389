@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DOM-q2labmst</title>
+</head>
+
+<body>
+
+<p id="para">change this content by clicking the button</p>
+
+<button onclick="changeText()">Click</button>
+
+<script>
+
+function changeText(){
+    var element = document.getElementById("para");
+    element.innerText = "WELCOME TO JS DOM MANIPULATION";
+    element.style.color = "blue";
+    element.style.fontSize = "24px";
+}
+
+</script>
+
+</body>
+</html>
